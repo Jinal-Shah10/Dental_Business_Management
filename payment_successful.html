@@ -1,0 +1,250 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!DOCTYPE html>
+    <html lang="en">
+  
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Abstract</title>
+        <style type="text/css">
+      /* RESET */
+            img {
+                border: none;
+                -ms-interpolation-mode: bicubic;
+                max-width: 100%;
+                vertical-align: bottom;
+            }
+            body {
+                background-color: #fff;
+                margin: 0;
+                padding: 0;
+                -ms-text-size-adjust: 100%;
+                -webkit-text-size-adjust: 100%;
+                color: #2E2F30;
+            }
+            table {
+                border-collapse: separate;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+                width: 100%;
+            }
+            table td {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 17px;
+                vertical-align: top;
+                line-height: 24px;
+                letter-spacing: -0.41px;
+            }
+            p,
+            ul,
+            h1,
+            h2,
+            h3,
+            blockquote {
+                margin: 0;
+                padding: 0;
+                padding-bottom: 16px;
+            }
+            /* STYLING */
+            p.cta {
+                padding: 8px 0 24px;
+            }
+            table.wrapper {
+                max-width: 640px;
+                margin: 0 auto;
+                padding: 48px;
+            }
+            a.button {
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 24px;
+                letter-spacing: -0.41px;
+                border: 2px solid #2E2F30;
+                padding: 8px 16px;
+                border-radius: 4px;
+                display: inline-block;
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: relative;
+                color: #2E2F30 !important;
+                text-decoration: none !important;
+            }
+            a.button:focus,
+            a.button:hover {
+            border-color: #157FF3;
+            color: #157FF3 !important;
+            }
+            a.button:active {
+            top: 1px;
+            }
+            a.button.primary {
+                background-color: #2E2F30;
+                color: #fff !important;
+            }
+            a.button.primary:hover,
+            a.button.primary:focus {
+                background-color: #157FF3;
+                color: #fff;
+            }
+            a.button.large {
+                min-width: 192px;
+                padding: 8px 16px;
+                font-size: 21px;
+                line-height: 26px;
+                letter-spacing: 0.36px;
+                text-transform: uppercase;
+            }
+            a.link {
+                color: #157FF3;
+                text-decoration: underline;
+            }
+            a.link:hover,
+            a.link:focus {
+                color: #2E2F30;
+            }
+            h1 {
+                padding-bottom: 24px;
+            }
+            h2 {
+                padding-top: 24px;
+                border-top: 1px solid #DCDEDF;
+                font-size: 26px;
+                line-height: 32px;
+                letter-spacing: 0.1px;
+                font-weight: 700;
+            }
+            h3 {
+                font-size: 21px;
+                line-height: 26px;
+                letter-spacing: 0.36px;
+                letter-spacing: -0.41px;
+                font-weight: 600;
+                border-top: 1px solid #DCDEDF;
+                padding-top: 24px;
+                margin-top: 8px;
+            }
+            blockquote {
+                padding: 8px 0 24px;
+            }
+            blockquote cite {
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: -0.15px;
+                color: #5A5AE6;
+                text-transform: uppercase;
+                font-style: normal;
+            }
+            blockquote p {
+                font-size: 21px;
+                line-height: 26px;
+                letter-spacing: 0.36px;
+                letter-spacing: -0.41px;
+                font-weight: 600;
+                padding-bottom: 8px;
+            }
+            tr.content > td {
+                padding-bottom: 8px;
+            }
+            tr.footer > td {
+                border-top: 1px solid #DCDEDF;
+            padding-top: 24px;
+            }
+            tr.footer p {
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: -0.15px;
+                color: #8B8E8F;
+            }
+            tr.footer p a {
+                color: #8B8E8F;
+            }
+            tr.footer p a:hover,
+            tr.footer p a:focus {
+                color: #5C5E5F;
+            }
+            ul {
+                padding-left: 24px;
+            }
+            table.billing-details {
+                padding-bottom: 16px;
+            }
+            table.billing-details th,
+            table.billing-details td {
+                text-align: left;
+                padding-right: 16px;
+                padding-bottom: 8px;
+            }
+            table.billing-details th,
+            table.billing-details strong {
+                font-size: 14px;
+                letter-spacing: -0.15px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            table.billing-details .align-right {
+                text-align: right;
+                padding-right: 0;
+            }
+            dl {
+                overflow: hidden;
+                margin: 0;
+                padding: 0 0 16px 0;
+            }
+            dt,
+            dd {
+                float: left;
+                width: 20%;
+                padding: 0 5% 0 0;
+                margin: 0;
+            }
+            dt {
+                font-size: 14px;
+                letter-spacing: -0.15px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        </style>
+    </head>
+  
+    <body> <span style="color: transparent; display: none !important; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">Thank you for using Abstract!</span>
+
+        <table style="text-align: center;">
+        <tr class="wrapper" cellpadding="0" cellspacing="0">
+        <tr class="header">
+            <td>
+            <h1>
+                <a href="https://www.goabstract.com/" title="Abstract"><img src="{{ url_for('static', filename='images/mainlogo.png') }}" alt="Jane" style="width:10%; text-align: center;"></a>
+            </h1>
+
+            </td>
+        </tr>
+        <tr class="content">
+            <td>
+            <p>Hi there,</p>
+            <p>Thank you for shopping with us! We’ve successfully processed
+            your payment of <b>${{grandtotal}}</b>.</p>
+            <p>You can access your subscription information from
+                <a href="https://app.goabstract.com/organizations/df9cdb35-cdee-4d7a-8c8f-d035d2490db2/subscription">your settings page</a>. If you have any further questions please visit our
+                <a href="https://intercom.help/abstract/">help center</a> or
+                <a href="mailto:support@goabstract.com">contact support</a>.</p>
+            </td>
+        </tr>
+        <tr class="footer">
+            <td>
+            <p>
+         
+            <a href="https://www.goabstract.com" class="link" target="_blank">Jinal</a> 2020
+            <br>800 N State College Blvd, Fullerton, CA 92831
+            <br>Follow us on
+            <a href="https://twitter.com/goabstract" target="_blank">Twitter</a>,
+            <a href="https://www.linkedin.com/company-beta/17950473/" target="_blank">LinkedIn</a> or
+            <a href="https://www.facebook.com/groups/893366660785360/" target="_blank">Facebook</a>
+            </p>
+            </td>
+        </tr>
+        </table>  
+    </body>
+    </html>
+    {% endblock %}

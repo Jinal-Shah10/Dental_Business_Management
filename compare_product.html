@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+
+<div class="container mt-5">
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-6" id=product[0]>
+
+        </div>
+        <div class="col-md-6" id=product[0]>
+            <h4><b>Product Name:</b> &nbsp;&nbsp;&nbsp;{{product[1]}}</h4>
+            <hr>
+            <p><b>Product Price:</b> ${{product[3]}}</p>
+
+            {% if product[5]>0 %}
+            <p><b>Product Discount:</b> {{product[5]}}%</p>
+            {% endif %}
+            <hr>
+            {% if product[6] %}
+            <p><b>Product Availability:</b> Yes</p>
+            {% elif product[6] %}
+            <p><b>Product Availability:</b> No</p>
+            {% endif %}
+
+            <p><b>Product Seller:</b> {{product[2]}}</p>
+            <hr>
+            <b>Product Discription</b> 
+            <br>
+            <p style="word-wrap: break-word; width: 400px;">{{product[6]}}</p>
+            <hr>
+        </div>
+        <div class="col-md-6"></div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container mt-5" style="float:right;">
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-6" id=product[0]>
+
+        </div>
+        <div class="col-md-6" id=product[0]>
+            <h4><b>Product Name:</b> &nbsp;&nbsp;&nbsp;{{product[1]}}</h4>
+            <hr>
+            <p><b>Product Price:</b> ${{product[3]}}</p>
+
+            {% if product[5]>0 %}
+            <p><b>Product Discount:</b> {{product[5]}}%</p>
+            {% endif %}
+            <hr>
+            {% if product[6] %}
+            <p><b>Product Availability:</b> Yes</p>
+            {% elif product[6] %}
+            <p><b>Product Availability:</b> No</p>
+            {% endif %}
+
+            <p><b>Product Seller:</b> {{product[2]}}</p>
+            <hr>
+            <b>Product Discription</b> 
+            <br>
+            <p style="word-wrap: break-word; width: 400px;">{{product[6]}}</p>
+            <hr>
+        </div>
+        <div class="col-md-6"></div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,404 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+<html lang="en">
+<head>
+	
+  <link href="{{ url_for('static', filename='css/aboutus.css') }}" rel="stylesheet">
+  
+
+  <style>
+    /* div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 600px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      
+    }
+     */
+
+     @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f9f9f9;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-title{
+  color: #2d2d2d;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.7em 0;
+  
+}
+
+.container1{
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+  background-color: lightsteelblue;
+  
+}
+@media screen and (max-width: 640px){
+  .container1{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container1{
+    width: 33.33333%;
+  }
+}
+
+.container1 .title{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 500px;
+  height: 400px;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+.fadeIn-left{
+  left: 20%;
+}
+
+.fadeIn-right{
+  left: 80%;
+}
+    </style>
+	
+</head>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Order And Supplu Management System</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+<br>
+<h2 style="text-align:center">Our Team</h2> <br>
+<div class="row">
+  <div class="column">
+    <div class="card" style="text-align: center;">
+      <img src="{{ url_for('static', filename='images/han.jpg') }}" alt="Jane" style="width:30%; text-align: center;">
+      <div class="container">
+        <h2 style="text-align: center;">Wenlin Han</h2>
+        <p class="title" style="text-align: center;">Advisor</p>
+        <p></p>
+        <p>whan@fullerton.edu</p><br>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/Ryu.jpg') }}" alt="Mike" style="width:30%">
+      <div class="container">
+        <h2 style="text-align: center;">Christopher Ryu</h2>
+        <p class="title" style="text-align: center;">Reviewer</p>
+        <p></p>
+        <p>tryu@fullerton.edu</p><br>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/jinal.jpg') }}" alt="John" style="width:30%">
+      <div class="container">
+        <h2 style="text-align: center;">Jinal</h2>
+        <p class="title" style="text-align: center;">Developer</p>
+        <p></p>
+        <p>jinalshah9827@gmail.com</p><br>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<body>
+<h1 class="main-title">About Products</h1>
+
+<div class="container1">
+  <h3 class="title"></h3>
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"></a>
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{{ url_for('static', filename='images/mouth_mirror.jpg') }}">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">Mouth Mirror</h3>
+        <p class="content-text">This device is used to provide indirect vision, retracts lips, cheeks, and tongue. It can redirect light into the mouth. The name is pretty easy to remember because it’s a mirror that goes in the mouth!</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container1">
+  <h3 class="title"></h3>
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"></a>
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{{ url_for('static', filename='images/explorer.jpg') }}">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">Explorer</h3>
+        <p class="content-text">This device is used to examine teeth for decay, calculus, furcations and other abnormalities. The name is a little trickier to remember you have to think about the way that it is used. The explorers are used to explore the mouth and find issues that might be troubling the patient.</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container1">
+  <h3 class="title"></h3>
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"></a>
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{{ url_for('static', filename='images/airwatersyringe.jpg') }}">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">Air Water Syringe</h3>
+        <p class="content-text">This instrument allows the dental assistant to inject air or water into the oral cavity. Most people have experience with this tool because they see and feel it during their regular dentist visits. Air and water are what come out of it, and it’s called a syringe because of the way it injects the water or air.</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container1">
+  <h3 class="title"></h3>
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"></a>
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{{ url_for('static', filename='images/cotton_forceps.jpg') }}">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">Cotten Forceps</h3>
+        <p class="content-text">This instrument is used to transfer materials in or out of the oral cavity. It’s most commonly used to grip cotton, but can be used in other ways. The latin root for “-cept” means to grab or take hold of something, which can help you identify the name when you see it.</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container1">
+  <h3 class="title"></h3>
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"></a>
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{{ url_for('static', filename='images/dental_elevator.jpg') }}">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">Dental Elevator</h3>
+        <p class="content-text">This tool is used to assist with tooth extractions. The easy way to remember the name for this tool is to remember how it is used. Dental elevators are used to lift teeth in their sockets before extraction to prevent trauma to the surrounding area of the mouth.</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container1">
+  <h3 class="title"></h3>
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"></a>
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{{ url_for('static', filename='images/extracting_forceps.jpg') }}">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">EXTRACTING FORCEPS</h3>
+        <p class="content-text">This instrument is used for the removal of teeth. We know that forceps are for grabbing things from the cotton forceps, so the most important thing to remember that the “ex-” in “extract” comes from the latin word which means “to dig or pull out”.</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container1">
+  <h3 class="title"></h3>
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"></a>
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{{ url_for('static', filename='images/periodontal_probe.jpg') }}">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">PERIODONTAL PROBE</h3>
+        <p class="content-text">This instrument is used to measure periodontal pocket depth in millimeter increments. The Greek root for “peri-” means that something is related to bone or the tissue around a tooth, so that can remind you that it’s a tool for evaluating the state of the mouth in that area.</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container1">
+  <h3 class="title"></h3>
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"></a>
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{{ url_for('static', filename='images/ultrasonic_scalar.jpg') }}">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">ULTRASONIC SCALAR</h3>
+        <p class="content-text">This device is used to remove tartar from teeth. The Latin root for “ultra-” means that something is extreme or greater than, and “-sonic” is the root meaning for “sound”, so the ultrasonic scaler is a tartar removal tool that creates vibrations that reverberate outside the audible range of hearing for humans.</p>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="container1">
+  <h3 class="title"></h3>
+  <div class="content">
+    <a href="https://unsplash.com/photos/HkTMcmlMOUQ" target="_blank"></a>
+      <div class="content-overlay"></div>
+      <img class="content-image" src="{{ url_for('static', filename='images/micromotor.jpg') }}">
+      <div class="content-details fadeIn-bottom">
+        <h3 class="content-title">MICROMOTOR</h3>
+        <p class="content-text">Dental micromotors are used in dentistry for the treatment of semihard dental tissues. This instrument is connected to the hoses of other dental instruments with a variable connection system.</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+</body>
+<footer>&copy; Copyright 2020 Jinal Shah - All rights reserved</footer>
+</html>
+
+{% endblock %}
+
+<!-- <divclass="about-section">
+  <h1 style="text-align: center;">Products</h1>>
+
+  </div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='images/dental_logo.jpg') }}">
+    <img src="{{ url_for('static', filename='images/dental_logo.jpg') }}" alt="Cinque Terre" width="900" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='images/dental_logo.jpg') }}">
+    <img src="{{ url_for('static', filename='images/dental_logo.jpg') }}" alt="Forest" width="900" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='images/dental_logo.jpg') }}">
+    <img src="{{ url_for('static', filename='images/dental_logo.jpg') }}" alt="Northern Lights" width="900" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='images/dental_logo.jpg') }}">
+    <img src="{{ url_for('static', filename='images/dental_logo.jpg') }}" alt="Cinque Terre" width="900" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='images/dental_logo.jpg') }}">
+    <img src="{{ url_for('static', filename='images/dental_logo.jpg') }}" alt="Forest" width="900" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='images/dental_logo.jpg') }}">
+    <img src="{{ url_for('static', filename='images/dental_logo.jpg') }}" alt="Northern Lights" width="900" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='images/dental_logo.jpg') }}">
+    <img src="{{ url_for('static', filename='images/dental_logo.jpg') }}" alt="Cinque Terre" width="900" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="{{ url_for('static', filename='images/dental_logo.jpg') }}">
+    <img src="{{ url_for('static', filename='images/dental_logo.jpg') }}" alt="Forest" width="900" height="600">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div> -->
+
